@@ -1,9 +1,9 @@
-body {
-    margin: 0;
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
 
+.container{
+    /* align-items:end; */
+    /* margin: 0; */
+    /* padding: 10rem; */
+}
 .remove {
     display: none;
 }
@@ -11,9 +11,9 @@ body {
 .project {
     display: flex;
     flex-direction: column;
+    gap: 40px;
     justify-content: center;
     align-items: center;
-    gap: 48px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -106,8 +106,9 @@ body {
 /*  - - - - - - - - - - - - - - - - Min Width = 960 & Max Width = 1360 - - - - - - - - - - - - - - - - - */
 
 @media (min-width: 960px) and (max-width : 1360px) {
-    .remove960 {
-        display: none;
+    .container{
+        margin: 0;
+        padding: 24px 24px;
     }
 
     .firstSection {
@@ -259,7 +260,7 @@ body {
 
 /*  - - - - - - - - - - - - - - - - Min Width = 375 & Max Width = 568 - - - - - - - - - - - - - - - - - */
 
-@media (min-width: 374px) and (max-width : 568px) {
+@media (max-width: 568px) {
 
     body {
         padding-top: 16px;
