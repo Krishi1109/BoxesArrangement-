@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.remove {
+    display: none;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+}
+
+.firstSection {
+    width: 1280px;
+    height: 748px;
+    background-color: #666666;
+}
+
+.secondSection {
+    display: flex;
+    gap: 40px;
+}
+
+.secondSectionPart_1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 730px;
+    height: 1106px;
+    background-color: #8ECDE8;
+}
+
+.secondSectionPart_2 {
+    display: grid;
+    width: 510px;
+    grid-template-columns: auto;
+    gap: 40px;
+}
+
+.secondSectionPart_2>div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 342px;
+    background-color: #B0E47C;
+}
+
+.secondSectionPart_2_3 {
+    display: block;
+}
+
+/* - - - third Section  - - -  */
+
+.thirdSection {
+    /* margin: 96px 110px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    height: 702px;
+    gap: 40px;
+    background-color: #E9D945;
+}
+
+.thirdSection_1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    width: 510px;
+    height: 510px;
+}
+
+/*  - - - Fourth Section - - -  */
+.fourthSection {
+    display: flex;
+    gap: 40px;
+}
+
+.fourthSectionSubClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+    height: 324px;
+    background-color: #C4C4C4;
+}
+
+/*  - - - Fifth Section - - - */
+.fifthSection {
+    width: 1280px;
+    height: 106px;
+    background-color: #87EBB5;
+}
+
+/*  - - - - - - - - - - - - - - - - Min Width = 960 & Max Width = 1360 - - - - - - - - - - - - - - - - - */
+
+@media (min-width: 960px) and (max-width : 1360px) {
+    .remove960 {
+        display: none;
+    }
+
+    .firstSection {
+        width: 880px;
+        height: 548px;
+        background-color: #666666;
+    }
+
+    .secondSectionPart_1 {
+        width: 530px;
+        height: 806px;
+    }
+
+    .secondSectionPart_2 {
+        width: 310px;
+    }
+
+
+    .secondSectionPart_2>div {
+        height: 242px;
+    }
+
+    .thirdSection {
+        width: 880px;
+        height: 502px;
+        gap: 40px;
+    }
+
+    .thirdSection_1 {
+        width: 340px;
+        height: 340px;
+    }
+
+    .fourthSectionSubClass {
+        width: 420px;
+        height: 224px;
+    }
+
+    .fifthSection {
+        width: 880px;
+    }
+
+}
+
+/*  - - - - - - - - - - - - - - - - Min Width = 768 & Max Width = 960 - - - - - - - - - - - - - - - - - */
+@media (min-width: 568px) and (max-width : 960px) {
+    body {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .project {
+        gap: 24px;
+        font-size: 24px;
+    }
+
+    .firstSection {
+        width: 720px;
+        height: 300px;
+    }
+
+    .secondSection {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .secondSectionPart_1 {
+        width: 720px;
+        height: 200px;
+    }
+
+    .secondSectionPart_2 {
+        /* display: grid; */
+        width: 720px;
+        grid-template-columns: auto auto auto;
+        grid-gap: 24px;
+    }
+
+    .secondSectionPart_2>div {
+        height: 164px;
+    }
+
+    .thirdSection {
+        width: 720px;
+        height: 320px;
+        gap: 24px;
+    }
+
+    .thirdSection_1 {
+        width: 324px;
+        height: 272px;
+    }
+
+    .fourthSection {
+        gap: 24px;
+    }
+
+    .fourthSectionSubClass {
+        width: 348px;
+        height: 152px;
+    }
+
+    .fifthSection {
+        width: 720px;
+        height: 54px;
+    }
+
+
+    @media (min-width: 568px) and (max-width : 767px) {
+        .firstSection {
+            width: 520px;
+            height: 240px;
+        }
+
+        .secondSectionPart_1 {
+            width: 520px;
+            height: 200px;
+        }
+
+        .secondSectionPart_2 {
+            width: 520px
+        }
+
+        .secondSectionPart_2>div {
+            height: 164px;
+        }
+
+        .thirdSection {
+            width: 520px;
+            height: 220px;
+        }
+
+        .thirdSection_1 {
+            width: 224px;
+            height: 172px;
+        }
+
+        .fourthSectionSubClass {
+            width: 248px;
+            height: 102px;
+        }
+        .fifthSection {
+            width: 520px;
+            height: 54px;
+        }
+    }
+}
+
+/*  - - - - - - - - - - - - - - - - Min Width = 375 & Max Width = 568 - - - - - - - - - - - - - - - - - */
+
+@media (min-width: 374px) and (max-width : 568px) {
+
+    body {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .project {
+        gap: 16px;
+        font-size: 24px;
+    }
+
+    .firstSection {
+        width: 343px;
+        height: 180px;
+    }
+
+    .secondSection {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .secondSectionPart_1 {
+        width: 343px;
+        height: 150px;
+    }
+
+    .secondSectionPart_2 {
+        display: grid;
+        width: 343px;
+        grid-template-columns: auto auto;
+        gap: 16px;
+    }
+
+    .secondSectionPart_2>div {
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        height: 120px;
+    }
+
+    .secondSectionPart_2_3 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .thirdSection {
+        display: flex;
+        flex-direction: column;
+        width: 343px;
+        height: 368px;
+        gap: 16px;
+    }
+
+    .thirdSection_1 {
+        width: 311px;
+        height: 160px;
+    }
+
+    .fourthSection {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .fourthSectionSubClass {
+        width: 343px;
+        height: 120px;
+    }
+
+    .fifthSection {
+        width: 343px;
+        height: 52px;
+    }
+}
